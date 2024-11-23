@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('https://cdn.pixabay.com/photo/2023/06/10/05/36/civil-engineering-8053197_1280.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.message {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para mejorar la legibilidad */
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.message h1 {
+    font-size: 3em;
+    color: #00bfff; /* Celeste burbuja */
+    margin-bottom: 10px;
+}
+
+.message p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-style: italic;
+    color: #f1f1f1;
+}
+
+.icon {
+    font-size: 3em;
+    color: #ffc107;
+    margin-top: 10px;
+}
+
+.item {
+    position: absolute;
+    top: -50px;
+    animation: fall 5s ease-in forwards;
+    font-size: 3em;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
